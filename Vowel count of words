@@ -1,0 +1,10 @@
+def vowel_count(word):
+    # count = 0
+    # for char in word:
+    #     if char.lower() in "aeiou":
+    #         count += 1
+    # return count
+    return sum(1 for char in word if char.lower() in "aeiou")
+
+words = input().split()
+print(" ".join([f"{word}({vow
